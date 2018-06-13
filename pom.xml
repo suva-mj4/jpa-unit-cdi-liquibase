@@ -47,6 +47,12 @@
         <!--</dependency>-->
         <dependency>
             <groupId>com.github.dadrus.jpa-unit</groupId>
+            <artifactId>jpa-unit-core</artifactId>
+            <version>0.4.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.dadrus.jpa-unit</groupId>
             <artifactId>jpa-unit-cdi</artifactId>
             <version>0.4.0</version>
             <scope>test</scope>
