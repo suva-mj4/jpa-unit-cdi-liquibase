@@ -36,7 +36,7 @@ public class IncapacitiesToWorkRepositoryTest {
     private IncapacitiesToWorkRepository repository;
 
     @Bootstrapping
-    public void prepareDataBase(final DataSource ds) {
+    public static void prepareDataBase(final DataSource ds) {
         System.out.println("Bootstrapping was called with datasource: " + ds);
     }
 
