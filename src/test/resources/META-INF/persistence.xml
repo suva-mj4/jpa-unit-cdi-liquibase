@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+             http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+
+    <persistence-unit name="unittest" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <class>ch.suva.extranet.m2mbetriebe.leistungsfall.persistence.entities.EntityWithUuid</class>
+        <class>ch.suva.extranet.m2mbetriebe.leistungsfall.persistence.entities.ProtectedEntity</class>
+        <class>ch.suva.extranet.m2mbetriebe.leistungsfall.persistence.entities.stories.IncapacitiesToWork</class>
+        <class>ch.suva.extranet.m2mbetriebe.leistungsfall.persistence.entities.stories.IncapacitiesToWorkEntry</class>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:h2:mem:unittest;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false;MULTI_THREADED=true"/>
+            <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
+            <property name="eclipselink.target-database" value="org.eclipse.persistence.platform.database.H2Platform" />
+            <property name="eclipselink.persistence-context.flush-mode" value="auto" />
+            <property name="eclipselink.jpa.uppercase-column-names" value="true" />
+            <property name="eclipselink.logging.logger" value="DefaultLogger" />
+            <property name="eclipselink.logging.level" value="FINE" />
+        </properties>
+    </persistence-unit>
+
+</persistence>

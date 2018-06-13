@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog logicalFilePath="/" xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.2.xsd http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <changeSet id="0.1.0-Add-Story-IncapacitiesToWork" author="mj4">
+
+        <createTable tableName="STORY_INCAPACITIES">
+            <column name="UUID" type="UUID">
+                <constraints nullable="false" />
+            </column>
+            <column name="GESCHAEFTS_PARTNER" type="VARCHAR(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="STORY_ID" type="VARCHAR(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="INSURANCE_CASE_ID" type="VARCHAR(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="INCIDENT_CASE_ID" type="VARCHAR(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="CREATION_DATE" type="DATE">
+                <constraints nullable="false" />
+            </column>
+        </createTable>
+        <createTable tableName="STORY_INCAPACITIES_ENTRY">
+            <column name="UUID" type="UUID">
+                <constraints nullable="false" />
+            </column>
+            <column name="GESCHAEFTS_PARTNER" type="VARCHAR(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="PERCENTAGE" type="VARCHAR(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="FROM" type="DATE">
+                <constraints nullable="false" />
+            </column>
+            <column name="TO" type="DATE">
+                <constraints nullable="true" />
+            </column>
+            <column name="TAKE_WORK_UP_FULLY_DATE" type="DATE">
+                <constraints nullable="true" />
+            </column>
+            <column name="PARENT" type="DATE">
+                <constraints nullable="false" />
+            </column>
+        </createTable>
+
+    </changeSet>
+</databaseChangeLog>
