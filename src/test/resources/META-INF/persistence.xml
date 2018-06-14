@@ -13,6 +13,9 @@
         <properties>
             <property name="javax.persistence.jdbc.url" value="jdbc:h2:mem:unittest;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false;MULTI_THREADED=true"/>
             <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
+            <!-- Es muss ein Dummy User & Passowrt gesetzt werden, sonst klappt das DB-Seeding nicht  -->
+            <property name="javax.persistence.jdbc.user" value="test" />
+            <property name="javax.persistence.jdbc.password" value="test" />
             <property name="eclipselink.target-database" value="org.eclipse.persistence.platform.database.H2Platform" />
             <property name="eclipselink.persistence-context.flush-mode" value="auto" />
             <property name="eclipselink.jpa.uppercase-column-names" value="true" />

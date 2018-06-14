@@ -13,11 +13,11 @@ public abstract class EntityWithUuid {
 
     @Id
     @Column(name = "UUID", nullable = false, unique = true)
-    private UUID uuid;
+    private String uuid;
 
     public EntityWithUuid() {}
 
-    public EntityWithUuid(UUID uuid) {
+    public EntityWithUuid(String uuid) {
         this.uuid = uuid;
     }
 }

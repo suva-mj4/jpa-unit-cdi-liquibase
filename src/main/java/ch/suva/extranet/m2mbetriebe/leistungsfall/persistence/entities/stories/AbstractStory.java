@@ -30,14 +30,14 @@ public abstract class AbstractStory extends ProtectedEntity {
 
     public AbstractStory() {}
 
-    public AbstractStory(UUID uuid, String geschaeftsPartner, String insuranceCaseId, String storyId) {
+    public AbstractStory(String uuid, String geschaeftsPartner, String insuranceCaseId, String storyId) {
         super(uuid, geschaeftsPartner);
         this.insuranceCaseId = insuranceCaseId;
         this.storyId = storyId;
         this.creationDate = new GregorianCalendar();
     }
 
-    public AbstractStory(UUID uuid, String geschaeftsPartner, String insuranceCaseId, String incidentCaseId, String storyId) {
+    public AbstractStory(String uuid, String geschaeftsPartner, String insuranceCaseId, String incidentCaseId, String storyId) {
         super(uuid, geschaeftsPartner);
         this.insuranceCaseId = insuranceCaseId;
         this.incidentCaseId = incidentCaseId;

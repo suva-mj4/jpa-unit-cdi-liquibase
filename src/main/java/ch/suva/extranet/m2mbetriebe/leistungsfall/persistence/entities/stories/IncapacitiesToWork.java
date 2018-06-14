@@ -22,7 +22,7 @@ public class IncapacitiesToWork extends AbstractStory {
 
     public IncapacitiesToWork() {}
 
-    public IncapacitiesToWork(UUID uuid, String storyId, String insuranceCaseId, String geschaeftsPartner) {
+    public IncapacitiesToWork(String uuid, String storyId, String insuranceCaseId, String geschaeftsPartner) {
         super(uuid, storyId, insuranceCaseId, geschaeftsPartner);
     }
 

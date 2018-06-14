@@ -20,7 +20,7 @@ public abstract class ProtectedEntity extends EntityWithUuid {
 
     public ProtectedEntity() {}
 
-    public ProtectedEntity(UUID uuid, String geschaeftsPartner) {
+    public ProtectedEntity(String uuid, String geschaeftsPartner) {
         super(uuid);
         this.geschaeftsPartner = geschaeftsPartner;
     }

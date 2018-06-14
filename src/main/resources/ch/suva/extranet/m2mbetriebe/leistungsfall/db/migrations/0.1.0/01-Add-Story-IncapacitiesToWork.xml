@@ -5,7 +5,7 @@
     <changeSet id="0.1.0-Add-Story-IncapacitiesToWork" author="mj4">
 
         <createTable tableName="STORY_INCAPACITIES">
-            <column name="UUID" type="UUID">
+            <column name="UUID" type="VARCHAR(36)">
                 <constraints nullable="false" />
             </column>
             <column name="GESCHAEFTS_PARTNER" type="VARCHAR(255)">

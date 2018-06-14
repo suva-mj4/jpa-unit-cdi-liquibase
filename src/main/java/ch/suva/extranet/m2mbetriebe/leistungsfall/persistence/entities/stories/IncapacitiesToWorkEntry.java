@@ -34,7 +34,7 @@ public class IncapacitiesToWorkEntry extends ProtectedEntity {
 
     public IncapacitiesToWorkEntry() {}
 
-    public IncapacitiesToWorkEntry(UUID uuid, String geschaeftsPartner, IncapacitiesToWork parent, Double percentage, GregorianCalendar from) {
+    public IncapacitiesToWorkEntry(String uuid, String geschaeftsPartner, IncapacitiesToWork parent, Double percentage, GregorianCalendar from) {
         super(uuid, geschaeftsPartner);
         this.percentage = percentage;
         this.from = from;
